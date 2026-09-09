@@ -1,0 +1,1 @@
+# shoptet_validator_claude
