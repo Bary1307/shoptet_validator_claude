@@ -3,8 +3,8 @@
   "name": "pro_craft",
   "source": {
     "type": "url",
-    "url": "https://b2b.procraft.cz/feed?api_token=C79IT3kE52Zp95DzcLinPOdkTjoYw0jvoDAlxkgzgPHxdBvOsCb4YGnTRrLVaQ0sDLMEOmj44k6apd4X&brand=Procraft",
-    "url_env": "",
+    "url": "",
+    "url_env": "FEED_URL",
     "auth": {
       "type": "none"
     }
@@ -38,11 +38,12 @@
     },
     "currency": "CZK",
     "category": {
-      "mode": "fixed",
-      "fixed_value": "Nezařazeno"
+      "mode": "direct",
+      "source": "category"
     },
     "weight": {
-      "mode": "none"
+      "mode": "direct",
+      "source": "weight"
     },
     "images": {
       "mode": "direct",
@@ -177,7 +178,7 @@
     "path": "feeds/pro_craft.xml"
   },
   "checks": {
-    "max_drop_ratio": 0.82,
+    "max_drop_ratio": 0.3,
     "max_invalid_ratio": 0.2
   }
 }
