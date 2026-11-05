@@ -1,0 +1,183 @@
+{
+  "job_version": 1,
+  "name": "pro_craft",
+  "source": {
+    "type": "url",
+    "url": "https://b2b.procraft.cz/feed?api_token=C79IT3kE52Zp95DzcLinPOdkTjoYw0jvoDAlxkgzgPHxdBvOsCb4YGnTRrLVaQ0sDLMEOmj44k6apd4X&brand=Procraft",
+    "url_env": "",
+    "auth": {
+      "type": "none"
+    }
+  },
+  "profile": {
+    "profile_name": "Pro-Craft",
+    "item_tag": "item",
+    "fields": {
+      "CODE": {
+        "source": "article"
+      },
+      "NAME": {
+        "source": "title"
+      },
+      "DESCRIPTION": {
+        "source": "full-description"
+      },
+      "MANUFACTURER": {
+        "source": "brand"
+      },
+      "EAN": {
+        "source": "ean_code"
+      },
+      "PART_NUMBER": {
+        "source": ""
+      }
+    },
+    "price": {
+      "mode": "direct",
+      "source": "price"
+    },
+    "currency": "CZK",
+    "category": {
+      "mode": "fixed",
+      "fixed_value": "Nezařazeno"
+    },
+    "weight": {
+      "mode": "none"
+    },
+    "images": {
+      "mode": "direct",
+      "source": "image",
+      "max_images": null,
+      "add_description": true
+    },
+    "params": {
+      "repeat_element": "parameter",
+      "classifier_scope": "none",
+      "classifier_field": "",
+      "fname_field": "parameter-name",
+      "fvalue_field": "parameter-value",
+      "funit_field": "parameter-units",
+      "value_map": {
+        "kg": "ignore",
+        "V": "ignore",
+        "mm": "ignore",
+        "/min": "ignore",
+        "Hz": "ignore",
+        "W": "ignore",
+        "Ah": "ignore",
+        "bar": "ignore",
+        "cm": "ignore",
+        "m": "ignore",
+        "\"": "ignore",
+        "hod": "ignore",
+        "ot./min": "ignore",
+        "l/min": "ignore",
+        "°C": "ignore",
+        "m/s": "ignore",
+        "ot/min": "ignore",
+        "J": "ignore",
+        "Nm": "ignore",
+        "L": "ignore",
+        "l/h": "ignore",
+        "m/s2": "ignore",
+        "m/min": "ignore",
+        "lm": "ignore",
+        "(°)": "ignore",
+        "min⁻¹": "ignore",
+        "C": "ignore",
+        "min": "ignore",
+        "℃": "ignore",
+        "HP": "ignore",
+        "ks": "ignore",
+        "kW": "ignore",
+        "kg/h": "ignore"
+      },
+      "marketing_target": "SHORT_DESCRIPTION",
+      "marketing_roles": {}
+    },
+    "visibility_default": "visible",
+    "videos": {
+      "mode": "none"
+    },
+    "references": {
+      "enabled": false,
+      "reference_element": "parameter",
+      "type_mode": "field",
+      "type_attr": "type",
+      "type_field": "parameter-units",
+      "id_field": "parameter-name",
+      "included_types": [
+        "Hz",
+        "/min",
+        "mm",
+        "W",
+        "Ah",
+        "\"",
+        "m",
+        "bar",
+        "l/h",
+        "°C",
+        "m/s",
+        "ot/min",
+        "min⁻¹",
+        "J",
+        "Nm",
+        "m/s2",
+        "hod",
+        "ot./min",
+        "m/min"
+      ],
+      "alt_types": [],
+      "only_existing": false,
+      "wrapper_tag": "RELATED_PRODUCTS",
+      "item_tag": "CODE"
+    },
+    "name_prefix": "",
+    "name_suffix": "",
+    "description_format": {
+      "enabled": true,
+      "paragraphs": true,
+      "extract_packaging": true,
+      "headings": true,
+      "bold_numbers": true,
+      "dedupe": true,
+      "dedupe_level": 100
+    },
+    "name_cleanup": {
+      "enabled": true,
+      "strip_after_semicolon": true,
+      "strip_own_code_parens": true
+    },
+    "text_tools": {
+      "enabled": true,
+      "collapse_spaces": true,
+      "name_case": "none",
+      "short_desc_max": 0,
+      "replace_rules": []
+    },
+    "price_adjust": {
+      "enabled": false,
+      "source_mode": "net",
+      "discount_percent": 0.0,
+      "vat_percent": "21"
+    },
+    "price_precision": "int",
+    "availability": {
+      "enabled": false,
+      "in_stock": "Skladem",
+      "out_of_stock": "2-3 dny"
+    }
+  },
+  "selection": {
+    "mode": "all"
+  },
+  "overrides": {},
+  "price_source": null,
+  "output": {
+    "path": "feeds/pro_craft.xml"
+  },
+  "checks": {
+    "max_drop_ratio": 0.82,
+    "max_invalid_ratio": 0.2
+  }
+}
